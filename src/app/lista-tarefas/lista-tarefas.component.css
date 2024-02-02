@@ -5,55 +5,49 @@
   margin-bottom: 40px;
   margin-top: 40px;
 }
-
 .busca p {
-  color: #6C757D;
+  color: #6c757d;
   font-size: 16px;
   font-weight: 600;
   margin-right: 32px;
 }
-
 #campo-busca::placeholder {
-  color: #6C757D;
-  font-family: 'Prompt';
+  color: #6c757d;
+  font-family: "Prompt";
   font-size: 16px;
   padding: 8px 0 8px 8px;
 }
-
 .busca input {
-  border: 1px solid #6C757D;
+  border: 1px solid #6c757d;
   border-radius: 8px;
-  font-family: 'Prompt';
+  font-family: "Prompt";
   font-size: 16px;
   height: 40px;
   width: 300px;
   padding-left: 12px;
 }
-
-input[type='search']:focus {
+input[type="search"]:focus {
   background-image: none;
   outline: none;
   text-decoration: none;
 }
-
 input[type="search"]::-webkit-search-decoration,
 ::-webkit-search-cancel-button,
 ::-webkit-search-results-button,
-::-webkit-search-results-decoration { display: none; }
-
-@media(max-width: 1060px) {
+::-webkit-search-results-decoration {
+  display: none;
+}
+@media (max-width: 1060px) {
   .busca {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .busca p {
     margin-bottom: 12px;
     margin-right: 0;
   }
 }
-
 .lista-tarefas {
   display: flex;
   flex-direction: column;
@@ -64,50 +58,41 @@ input[type="search"]::-webkit-search-decoration,
   margin-left: 25%;
   border-radius: 8px;
 }
-
 .card-Estudos {
-  background: #F9F0FF;
+  background: #f9f0ff;
 }
-
 .card-Trabalho {
-  background: #E9F7FF;
+  background: #e9f7ff;
 }
-
 .card-Casa {
-  background: #E7E8FF;
+  background: #e7e8ff;
 }
-
 .card-Feito {
   text-decoration: line-through;
 }
-
 .listagem-tarefas {
   min-height: 80vh;
 }
-
-.listagem-tarefas h2{
+.listagem-tarefas h2 {
   font-size: 32px;
-  font-family: 'Prompt';
+  font-family: "Prompt";
   font-weight: 400;
   line-height: 48px;
 }
-
 .ilustracao {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
 h2 {
   font-size: 32px;
   margin-right: 88px;
   margin-left: 40px;
 }
-
 button {
   border-style: solid;
-  border-color: rgb(175, 193, 207);
+  border-color: #afc1cf;
   background-color: rgba(245, 245, 245, 0.871);
   border-radius: 8px;
   margin-right: 10px;
@@ -119,78 +104,67 @@ button {
   border: none;
   width: max-content;
 }
-
-.botao-criar{
+.botao-criar {
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
 }
-
 .botao-criar button {
   background: var(--primaria);
   border-radius: 8px;
   color: var(--branco);
-  font-family: 'Prompt';
+  font-family: "Prompt";
   font-weight: 600;
   font-size: 16px;
   padding: 8px 16px;
   line-height: 24px;
 }
-
 .botoes-form {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
 .botao-form {
-  font-family: 'Prompt';
+  font-family: "Prompt";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color:  var(--branco);
+  color: var(--branco);
   display: flex;
   justify-content: center;
   width: 94px;
   height: 40px;
   margin-bottom: 0;
 }
-
 .botao-salvar {
-  background: #63B77C;
+  background: #63b77c;
 }
-
 .botao-cancelar {
-  background: #F89185;
+  background: #f89185;
 }
-
 .botao-desabilitado {
-  background: #6C757D;
+  background: #6c757d;
   cursor: default;
 }
-
-.botao-editar, .botao-deletar {
+.botao-editar,
+.botao-deletar {
   padding: 0;
   margin: 4px 0;
 }
-
 .botao-editar {
   margin-right: 16px;
 }
-
 .botoes-card {
   display: inline-flex;
   margin-right: 12px;
 }
-
 .input-invalido {
-  border-color: red!important;
-  margin-bottom: 0!important;
+  border-color: #f00 !important;
+  margin-bottom: 0 !important;
 }
-
 .formulario {
   display: flex;
   flex-direction: column;
@@ -205,18 +179,16 @@ button {
   margin-left: 25%;
   margin-bottom: 32px;
 }
-
 input {
   font-weight: 400;
 }
-
 .form-tarefa {
-  font-family: 'Prompt';
+  font-family: "Prompt";
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 16px;
   border-radius: 8px;
-  background:  var(--branco);
+  background: var(--branco);
   border: 1px solid #7b6c7d;
   box-sizing: border-box;
   display: flex;
@@ -227,19 +199,16 @@ input {
   padding-left: 8px;
   text-decoration: none;
 }
-
 option:disabled {
-  color: #6C757D;
+  color: #6c757d;
 }
-
 .formulario label {
   padding-bottom: 4px;
 }
-
-select:focus, input:focus {
+select:focus,
+input:focus {
   outline: 0;
 }
-
 .conteudo {
   display: flex;
   justify-content: space-between;
@@ -247,11 +216,9 @@ select:focus, input:focus {
   margin-top: 24px;
   margin-bottom: 12px;
 }
-
-.botoes-card button{
+.botoes-card button {
   background-color: inherit;
 }
-
 .card-descricao {
   grid-area: "card-descricao";
   font-size: 21px;
@@ -265,7 +232,6 @@ select:focus, input:focus {
   max-width: 70%;
   margin-top: 0;
 }
-
 .status-tarefa {
   grid-area: "status";
   grid-column: span 3;
@@ -275,10 +241,9 @@ select:focus, input:focus {
   justify-content: flex-end;
   align-items: center;
   height: 40px;
-  font-family: 'Prompt';
+  font-family: "Prompt";
   color: #263238;
 }
-
 .status-tarefa button {
   cursor: pointer;
   margin-top: 55px;
@@ -286,13 +251,11 @@ select:focus, input:focus {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #6C757D;
+  border: 1px solid #6c757d;
 }
-
 .status-tarefa button:hover {
-  border-color: #84D39B;
+  border-color: #84d39b;
 }
-
 .prioridade-tarefa {
   grid-area: "prioridade";
   margin-left: 8px;
@@ -303,24 +266,20 @@ select:focus, input:focus {
   justify-content: center;
   align-items: center;
   height: 40px;
-  font-family: 'Prompt';
+  font-family: "Prompt";
   color: #263238;
   padding-right: 8px;
   padding-left: 8px;
 }
-
 .prioridade-Alta {
-  background: #F7A9A0;
+  background: #f7a9a0;
 }
-
 .prioridade-Normal {
-  background: #FFD67F;
+  background: #ffd67f;
 }
-
 .prioridade-Baixa {
-  background: #ABE5BC;
+  background: #abe5bc;
 }
-
 .categoria-tarefa {
   grid-area: "categoria";
   margin-left: 8px;
@@ -330,99 +289,81 @@ select:focus, input:focus {
   display: flex;
   align-items: center;
   height: 40px;
-  font-family: 'Prompt';
+  font-family: "Prompt";
   color: #263238;
   padding-right: 8px;
   padding-left: 8px;
 }
-
 .categoria-tarefa img {
   padding-right: 8px;
 }
-
 .info-card {
-  display:grid;
+  display: grid;
   grid-template-columns: min-content min-content repeat(3, 1fr);
-  grid-template-areas:
-    "categoria prioridade status"
-    "descricao";
+  grid-template-areas: "categoria prioridade status" "descricao";
   margin-left: 8px;
   box-sizing: border-box;
 }
-
-.icone-unchecked{
+.icone-unchecked {
   background: transparent;
 }
-
-.icone-checked{
+.icone-checked {
   background-image: url("/assets/icones/check-Feito.png");
   border: none !important;
 }
-
 .categoria-Casa {
-  background: #B2B6FF;
+  background: #b2b6ff;
 }
-
 .categoria-Estudos {
-  background: #D499FF;
+  background: #d499ff;
 }
-
 .categoria-Trabalho {
-  background: #8AD4FF;
+  background: #8ad4ff;
 }
-
 .ng-template {
   text-align: center;
   margin-top: 48px;
   margin-top: 96px;
 }
-
 input::placeholder {
-  color:#000000
+  color: #000;
 }
-
 @media (max-width: 890px) {
   .ilustracao {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
   }
-
   .ilustracao h2 {
     margin-right: 0;
     margin-left: 0;
   }
 }
-
 @media (max-width: 650px) {
   .info-card {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: min-content;
     margin-left: 0;
   }
-
-  .prioridade-tarefa, .categoria-tarefa {
+  .prioridade-tarefa,
+  .categoria-tarefa {
     margin-left: 0;
   }
-
   .lista-tarefas {
     display: flex;
     align-items: center;
   }
-
   .criar-tarefa button {
     margin-top: 32px;
   }
-
   .card-descricao {
     margin-top: 30px;
   }
-
-  .icone-checked, .icone-unchecked {
+  .icone-checked,
+  .icone-unchecked {
     margin-right: 25%;
   }
 }
-
 @media (max-width: 504px) {
   .botoes-form {
     flex-direction: column;
