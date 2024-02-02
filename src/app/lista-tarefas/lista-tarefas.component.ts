@@ -14,6 +14,7 @@ import {
 } from '../animations';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-lista-tarefas',
@@ -52,7 +53,8 @@ export class ListaTarefasComponent implements OnInit {
   constructor(
     private service: TarefaService,
     private fomBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private ngZone: NgZone
   ) {}
 
   ngOnInit(): void {
@@ -82,10 +84,18 @@ export class ListaTarefasComponent implements OnInit {
   salvarTarefa() {
     if (this.formulario.value.id) {
       this.editarTarefa();
-      window.location.reload();
+      setTimeout(() => {
+        this.ngZone.run(() => {
+          window.location.reload();
+        });
+      }, 1000);
     } else {
       this.criarTarefa();
-      window.location.reload();
+      setTimeout(() => {
+        this.ngZone.run(() => {
+          window.location.reload();
+        });
+      }, 1000);
     }
   }
 
@@ -101,7 +111,11 @@ export class ListaTarefasComponent implements OnInit {
     if (this.formulario.valid) {
       const tarefaEditada: Tarefa = this.formulario.value;
       this.service.editar(tarefaEditada, true);
-      window.location.reload();
+      setTimeout(() => {
+        this.ngZone.run(() => {
+          window.location.reload();
+        });
+      }, 1000);
     }
     this.resetarFormulario();
   }
@@ -109,7 +123,11 @@ export class ListaTarefasComponent implements OnInit {
   excluirTarefa(id: number): void {
     if (id) {
       this.service.excluir(id);
-      window.location.reload();
+      setTimeout(() => {
+        this.ngZone.run(() => {
+          window.location.reload();
+        });
+      }, 1000);
     }
   }
 

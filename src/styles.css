@@ -6,6 +6,7 @@
   --secundaria: #EFECEC;
   --tercearia: #FC6736;
   --branco: #FFFFFF;
+  --cinza: #6c757d;
   background-color: var(--branco);
 }
 
